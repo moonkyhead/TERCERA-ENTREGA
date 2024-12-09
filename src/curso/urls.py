@@ -1,10 +1,10 @@
 from django.urls import path
 
-from .views import index, about  # Asegúrate de importar la vista `about`
+from .views import index, about 
 
 app_name = "curso"
 
 urlpatterns = [
     path("", index, name="index"),
-    path("about/", about, name="about"),  # Ruta corregida para la página "about"
+    path("about/", about, name="about"),
 ]
