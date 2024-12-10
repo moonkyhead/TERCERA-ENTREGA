@@ -15,10 +15,10 @@ class Autor(models.Model):
 class Libro(models.Model):
     titulo = models.CharField(max_length=200)
     fecha_publicacion = models.DateField()
-    autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
+    autor = models.CharField(max_length=200)
     
     def __str__(self):
-        return f"{self.titulo} {self.fecha_publicacion} {self.autor_id}"
+        return f"{self.titulo} {self.fecha_publicacion} {self.autor}"
     
 class Editorial(models.Model):
     nombre = models.CharField(max_length=200)

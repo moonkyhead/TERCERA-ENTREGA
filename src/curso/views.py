@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import AutorForm, LibroForm, EditorialForm
+from . models import Autor, Libro, Editorial
 
 
 # Create your views here.
@@ -41,10 +42,16 @@ def crear_editorial(request):
             return redirect('crear_editorial.html', {'form': form})
 
 
+def Autor_list(request):
+    query = curso.Autor.All()
+    return render(request, 'Autor/Autor_list.html')
 
 
+def Libro_list(request):
+    return render(request, 'Libro/Libro_list.html')
 
-
+def Editorial_list(request):
+    return render(request, 'Editorial/Editorial_list.html')
 
 
 

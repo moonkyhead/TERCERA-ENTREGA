@@ -1,0 +1,10 @@
+{% extends 'Editorial/base.html'%}
+
+{% block nombre %}
+<h1>Lista de Autores</h1>
+<ul>
+    {% for Editorial in Editorial_list %}
+    <p1>{{ object.libros }} - {{ object.nombre }} </p1>
+    {% endfor %}
+</ul>
+{% endblock nombre %}

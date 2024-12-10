@@ -1,0 +1,10 @@
+{% extends 'Autor/base.html'%}
+
+{% block nombre %}
+<h1>Lista de Autores</h1>
+<ul>
+    {% for Autor in Autor_list %}
+    <p1>{{ object.nombre }} - {{ object.apellido }} - {{ object.nacionalidad }} </p1>
+    {% endfor %}
+</ul>
+{% endblock nombre %}
