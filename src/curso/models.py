@@ -15,7 +15,7 @@ class Autor(models.Model):
 class Libro(models.Model):
     titulo = models.CharField(max_length=200)
     fecha_publicacion = models.DateField()
-    autor_id = models.ForeignKey(Autor, on_delete=models.CASCADE)
+    autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
     
     def __str__(self):
         return f"{self.titulo} {self.fecha_publicacion} {self.autor_id}"
