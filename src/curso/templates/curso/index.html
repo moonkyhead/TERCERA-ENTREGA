@@ -1,5 +1,8 @@
 {% extends 'curso/base.html' %}
 
 {% block contenido %}
-                        <h1>Explotar Tarjeta de Credito</h1>
+        <h1>Explotar Tarjeta de Credito</h1>
+        <a href='{% url'curso:Autor_list' %}'>Mostrar autores</a>
+        <a href='{% url'curso:Libro_list' %}'>Mostrar libros</a>
+        <a href='{% url'curso:Editorial_list' %}'>Mostrar editoriales</a>
 {% endblock contenido %}

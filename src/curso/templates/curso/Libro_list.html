@@ -1,10 +1,16 @@
-{% extends 'Libro/base.html'%}
-
-{% block titulo %}
-<h1>Lista de Autores</h1>
-<ul>
-    {% for Libro in Libro_list %}
-    <p1>{{ object.libro }} - {{ object.fecha_publicacion }} - {{ object.autor }} </p1>
-    {% endfor %}
-</ul>
-{% endblock titulo %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Libros</title>
+</head>
+<body>
+    <h1>Libros</h1>
+    <a href="{% url 'crear_libro' %}">Crear Nuevo Libro</a>
+    <ul>
+        {% for libro in object_list %}
+            <li>{{ libro.titulo }} ({{ libro.fecha_publicacion }}) - Autor: {{ libro.autor }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
