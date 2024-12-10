@@ -11,13 +11,13 @@ class AutorAdmin(admin.ModelAdmin):
     search_fields = ('nombre', 'apellido')
 
 
-
-
-
-
-
-
-
-
-
-
+@admin.register(Libro)
+class LibroAdmin(admin.ModelAdmin):
+    list_display = ('titulo', 'fecha_publicacion', 'autor')
+    search_fields = ('titulo', 'autor')
+    
+    
+@admin.register(Editorial)
+class EditorialAdmin(admin.ModelAdmin):
+    list_display = ('nombre','libros')
+    search_fields = ('nombre','libros')
