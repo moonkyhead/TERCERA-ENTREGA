@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import AutorForm, LibroiForm, EditorialForm
+from .forms import AutorForm, LibroForm, EditorialForm
 
 
 # Create your views here.

@@ -4,19 +4,19 @@ from .models import Autor, Libro, Editorial
 class AutorForm(forms.ModelForm):
     class Meta:
         model = Autor
-        fields = ['nombre', 'apellido', 'nacionalidad', 'descripcion']
+        fields = '__all__'
         
         
-class LibroiForm(forms.ModelForm):
+class LibroForm(forms.ModelForm):
     class Meta:
         model = Libro
-        fields = ['titulo', 'fecha_publicacion', 'autor', 'editorial', 'descripcion', 'imagen']
+        fields = '__all__'
         
 
 class EditorialForm(forms.ModelForm):
     class Meta:
         model = Editorial
-        fields = ['nombre', 'sitioweb', 'descripcion']
+        fields = '__all__'
         
 
 
