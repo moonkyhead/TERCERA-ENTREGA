@@ -21,8 +21,8 @@ class LibroAdmin(admin.ModelAdmin):
 
 @admin.register(Editorial)
 class EditorialAdmin(admin.ModelAdmin):
-    list_display = ('nombre', 'genero')  
-    search_fields = ('nombre', 'escritor')
+    list_display = ('nombre',)  
+    search_fields = ('nombre',)
     
 
 

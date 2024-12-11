@@ -27,8 +27,9 @@ class Libro(models.Model):
 
 class Editorial(models.Model):
     nombre = models.CharField(max_length=200)
-    genero = models.CharField(max_length=100)
-    escritor = models.CharField(max_length=100) 
+    escritor = models.CharField(max_length=100, null=True, blank=True)
+    
+
 
     def __str__(self):
         return f"{self.nombre}"
