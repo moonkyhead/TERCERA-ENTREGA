@@ -1,0 +1,9 @@
+{% extends 'Autor/base.html' %}
+
+{% block contenido %}
+<form method= 'past'> 
+    {% csrf_token %}
+    {{form.as_p }}
+    <button type='submit'>Guardar</button>
+</form>
+{% endblock contenido %}
