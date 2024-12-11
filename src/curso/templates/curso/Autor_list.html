@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Lista de Autores</title>
+    <title><button>Lista de Autores</button></title>
 </head>
 <body>
-    <h1>Autores</h1>
+    <h1><button>Autores</button></h1>
     <a href="{% url 'Autor_list' %}">Crear Nuevo Autor</a>
     <ul>
         {% for autor in Autor_list %}
