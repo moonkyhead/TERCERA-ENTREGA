@@ -23,7 +23,7 @@ def Autor_create(request):
         if form.is_valid():
             form.save()
             return redirect ('curso:Autor_list')
-    return render(request, Autor/Autor_create, {'form':form})
+    return render(request, 'Autor/Autor_form.html', {'form':form})
 
 
 def Libro_list(request):
@@ -39,7 +39,7 @@ def Libro_create(request):
         if form.is_valid():
             form.save()
             return redirect ('curso:Libro_list')
-    return render(request, Libro/Libro_create, {'form':form})
+    return render(request, 'curso/Libro_form.html', {'form':form})
 
 
 def Editorial_list(request):
@@ -55,7 +55,7 @@ def Editorial_create(request):
         if form.is_valid():
             form.save()
             return redirect ('curso:Editorial_list')
-    return render(request, Editorial/Editorial_create, {'form':form})
+    return render(request, 'curso/Editorial_form.html', {'form':form})
 
 
 

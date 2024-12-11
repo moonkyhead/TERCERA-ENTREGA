@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Editoriales</h1>
-    <a href="{% url 'Editorial_list' %}"><button>Crear Nueva Editorial</button></a>
+    <a href="{% url 'curso:Editorial_create' %}"><button>Crear Nueva Editorial</button></a>
     <ul>
         {% for editorial in object_list %}
             <li>{{ editorial.nombre }} - Libros: 
