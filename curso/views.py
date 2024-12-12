@@ -14,6 +14,13 @@ def saludar_con_parametros(request, nombre: str, apellido: str):
     apellido = apellido.capitalize()
     return HttpResponse(f'{apellido}, {nombre}')
 
+def index2(request):
+    return render(request, 'curso/index2.html')
+
+def index2(request):
+    context= {'año': 2024}
+    return render(request, 'curso/index2.html', context)
+
 def index(request):
     return render(request, 'curso/index.html')
 
