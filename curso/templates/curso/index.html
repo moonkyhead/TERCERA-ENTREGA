@@ -1,0 +1,12 @@
+{% extends 'curso/base.html' %}
+
+{% block contenido %}
+<main style='text-align:center'>
+    <h1>Bienvenidos a la Biblioteca de Leandrito</h1>
+    <a href="{% url 'curso:Autor_list' %}"><button>Mostrar autores</button></a>
+    <a href="{% url 'curso:Libro_list' %}"><button>Mostrar libros</button></a>
+    <a href="{% url 'curso:Editorial_list' %}"><button>Mostrar editoriales</button></a>
+</main>
+{% endblock contenido %}
+
+

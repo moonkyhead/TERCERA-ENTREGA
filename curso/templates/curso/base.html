@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeandritoPython</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic|Lora|Dancing+Script:700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            padding: 2em;
+            color: black;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 0.2em;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+            font-size: 2.5em;
+        }
+        h2 {
+            font-family: 'Lora', serif;
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+        }
+        .options {
+            flex: 1;
+        }
+        .option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 60px;
+            margin: 0.5em auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .btn-primary {
+            background-color: #3498db;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        .btn-secondary {
+            background-color: #e74c3c;
+        }
+        .btn-secondary:hover {
+            background-color: #c0392b;
+        }
+        .btn-highlight {
+            background-color: #f39c12;
+        }
+        .btn-highlight:hover {
+            background-color: #e67e22;
+        }
+        .header-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .image-container {
+            flex: 0 0 auto;
+        }
+        .image-container img {
+            width: 150px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>~~ Bienvenidos a la librería de Leandrito ~~</h1>
+        <h2>Todo lo que necesitas, en un solo lugar</h2>
+        <div class="header-right">
+            <div class="option btn-primary">Soporte y Devoluciones</div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/The_Exorcist_%281973%29.jpg" alt="Imagen decorativa">
+        </div>
+        <div class="options">
+            <div class="option btn-secondary">Aprieta el botón y ve lo que sucede</div>
+            <div class="option btn-secondary">Dona con transferencia</div>
+
+            <div class="option btn-highlight">Autores</div>
+            <div class="option btn-highlight">Libros</div>
+            <div class="option btn-highlight">Editoriales</div>
+        </div>
+    </div>
+</body>
+</html>
+

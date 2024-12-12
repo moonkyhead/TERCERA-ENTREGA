@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title><button>Lista de Autores</button></title>
+    <a href='{% url 'curso:curso:Autor_create'}'><button>Crear</button></a>
+</head>
+<body>
+    <h1><button>Autores</button></h1>
+    <a href="{% url 'Autor_list' %}">Crear Nuevo Autor</a>
+    <ul>
+        {% for autor in Autor_list %}
+            <li>{{ autor.nombre }} {{ autor.apellido }} ({{ autor.nacionalidad }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
+
