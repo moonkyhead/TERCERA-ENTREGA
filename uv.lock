@@ -1,6 +1,12 @@
 version = 1
 requires-python = ">=3.13"
 
+[manifest]
+members = [
+    "src",
+    "tercera-entrega",
+]
+
 [[package]]
 name = "asgiref"
 version = "3.8.1"
@@ -32,6 +38,17 @@ sdist = { url = "https://files.pythonhosted.org/packages/57/61/5bc3aff85dc5bf982
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7a/13/5f6654c9d915077fae255686ca6fa42095b62b7337e3e1aa9e82caa6f43a/sqlparse-0.5.2-py3-none-any.whl", hash = "sha256:e99bc85c78160918c3e1d9230834ab8d80fc06c59d03f8db2618f65f65dda55e", size = 44407 },
 ]
+
+[[package]]
+name = "src"
+version = "0.1.0"
+source = { virtual = "src" }
+dependencies = [
+    { name = "django" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "django", specifier = ">=5.1.4" }]
 
 [[package]]
 name = "tercera-entrega"

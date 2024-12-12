@@ -1,10 +1,4 @@
 from django.urls import path
-from .views import index, about, Autor_list, Libro_list, Editorial_list
-
-
-app_name = "curso"
-
-from django.urls import path
 from .views import index, about, Autor_list, Libro_list, Editorial_list, Autor_create, Libro_create, Editorial_create
 
 

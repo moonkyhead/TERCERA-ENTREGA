@@ -13,7 +13,7 @@ def about(request):
 def Autor_list(request):
     autores = Autor.objects.all()  
     context = {'object_list': autores}  
-    return render(request, 'Autor/Autor_list.html', context)
+    return render(request, 'curso/Autor_list.html', context)
 
 def Autor_create(request):
     if request.method== 'GET':
@@ -23,13 +23,13 @@ def Autor_create(request):
         if form.is_valid():
             form.save()
             return redirect ('curso:Autor_list')
-    return render(request, 'Autor/Autor_form.html', {'form':form})
+    return render(request, 'curso/Autor_form.html', {'form':form})
 
 
 def Libro_list(request):
     libros = Libro.objects.all()  
     context = {'object_list': libros}  
-    return render(request, 'Libro/Libro_list.html', context)
+    return render(request, 'curso/Libro_list.html', context)
 
 def Libro_create(request):
     if request.method== 'GET':
@@ -45,7 +45,7 @@ def Libro_create(request):
 def Editorial_list(request):
     editoriales = Editorial.objects.all()  
     context = {'object_list': editoriales} 
-    return render(request, 'Editorial/Editorial_list.html', context)
+    return render(request, 'curso/Editorial_list.html', context)
 
 def Editorial_create(request):
     if request.method== 'GET':
